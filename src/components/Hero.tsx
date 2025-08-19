@@ -203,7 +203,8 @@ const Hero: React.FC<HeroProps> = ({ onRedirect }) => {
         {/* Título principal */}
         <div className="text-center mb-2 md:mb-4">
           <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black leading-tight animate-pulse-attention text-gray-100">
-            Sua internet não dura o mês todo? Você está cansado de depender do Wi-Fi dos outros ao sair de casa?
+            Sua internet <span className="text-blue-400">não dura o mês todo</span>? Você está <span className="text-blue-400">cansado de depender do Wi-Fi dos outros</span> ao sair de casa?<br/>
+            <span className="text-blue-400">Descubra a solução que mais de 100.000 brasileiros já encontraram!</span>
           </h1>
         </div>
 
