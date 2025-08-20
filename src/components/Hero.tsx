@@ -211,7 +211,7 @@ const Hero: React.FC<HeroProps> = ({ onRedirect }) => {
         {/* Pergunta entre título e vídeo */}
         <div className="text-center mb-4 md:mb-6">
           <p className="text-base md:text-lg text-gray-300 leading-relaxed">
-            Agora me diz: para que serve um celular sem internet?
+            Um celular sem internet perde 90% da sua utilidade.
           </p>
         </div>
         {/* Vídeo principal entre título e botão */}
