@@ -208,11 +208,17 @@ const Hero: React.FC<HeroProps> = ({ onRedirect }) => {
           </h1>
         </div>
 
+        {/* Pergunta entre título e vídeo */}
+        <div className="text-center mb-4 md:mb-6">
+          <p className="text-base md:text-lg text-gray-300 leading-relaxed">
+            Agora me diz: para que serve um celular sem internet?
+          </p>
+        </div>
         {/* Vídeo principal entre título e botão */}
         {showVideo && !videoError && (
           <div className="text-center mb-2 md:mb-4 mt-4 md:mt-6">
             <div className="relative max-w-xs md:max-w-4xl mx-auto">
-              <div className="relative aspect-[9/16] md:aspect-video bg-gray-900 rounded-2xl overflow-hidden shadow-2xl border-4 border-gray-700">
+              <div className="relative aspect-video bg-gray-900 rounded-2xl overflow-hidden shadow-2xl border-4 border-gray-700">
                 <video
                   ref={videoRef}
                   className="w-full h-full object-cover cursor-pointer"
