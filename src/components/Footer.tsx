@@ -25,8 +25,6 @@ const Footer = () => {
             <ul className="space-y-2 md:space-y-3">
               <li><a href="#beneficios" className="text-sm md:text-base text-gray-300 hover:text-white transition-colors">Benefícios</a></li>
               <li><a href="#planos" className="text-sm md:text-base text-gray-300 hover:text-white transition-colors">Cadastre-se</a></li>
-              <li><a href="https://federalassociados.com.br/login" target="_blank" rel="noopener noreferrer" className="text-sm md:text-base text-gray-300 hover:text-white transition-colors">Login</a></li>
-              <li><a href="https://federalassociados.com.br/boletos" target="_blank" rel="noopener noreferrer" className="text-sm md:text-base text-gray-300 hover:text-white transition-colors">Fatura</a></li>
               <li><a href="#sobre" className="text-sm md:text-base text-gray-300 hover:text-white transition-colors">Sobre Nós</a></li>
               <li><a href="#faq" className="text-sm md:text-base text-gray-300 hover:text-white transition-colors">FAQ</a></li>
             </ul>

@@ -52,7 +52,7 @@ const WrittenTestimonials: React.FC<WrittenTestimonialsProps> = ({ onRedirect })
   ];
 
   return (
-    <section className="py-8 md:py-20 bg-gray-50">
+    <section className="py-8 md:py-20 bg-black">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8 md:mb-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center max-w-6xl mx-auto">
@@ -94,12 +94,12 @@ const WrittenTestimonials: React.FC<WrittenTestimonialsProps> = ({ onRedirect })
 
             {/* Conteúdo textual */}
             <div className="order-1 lg:order-2">
-              <h3 className="text-2xl md:text-4xl font-bold mb-4 md:mb-6 text-gray-900">
+              <h3 className="text-2xl md:text-4xl font-bold mb-4 md:mb-6 text-gray-100">
                 A felicidade dos nossos
                 <span className="block text-purple-600">associados é real</span>
               </h3>
               
-              <p className="text-lg md:text-xl text-gray-700 mb-6 md:mb-8 leading-relaxed">
+              <p className="text-lg md:text-xl text-gray-300 mb-6 md:mb-8 leading-relaxed">
                 Todos os dias recebemos mensagens de <strong className="text-purple-600">gratidão</strong> de pessoas que finalmente encontraram uma internet que funciona de verdade.
               </p>
 
@@ -120,28 +120,28 @@ const WrittenTestimonials: React.FC<WrittenTestimonialsProps> = ({ onRedirect })
                 ].map((item, index) => (
                   <div
                     key={index}
-                    className="flex items-start space-x-4 p-4 rounded-lg hover:bg-white transition-colors border border-gray-200 shadow-sm"
+                    className="flex items-start space-x-4 p-4 rounded-lg hover:bg-gray-800 transition-colors"
                   >
-                    <div className="bg-purple-100 p-2 rounded-full">
+                    <div className="bg-gray-700 p-2 rounded-full">
                       <div className="w-2 h-2 bg-purple-600 rounded-full"></div>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-gray-900 mb-1">{item.title}</h4>
-                      <p className="text-gray-600 text-sm">{item.description}</p>
+                      <h4 className="font-semibold text-gray-100 mb-1">{item.title}</h4>
+                      <p className="text-gray-400 text-sm">{item.description}</p>
                     </div>
                   </div>
                 ))}
               </div>
 
-              <div className="mt-6 md:mt-8 p-4 md:p-6 bg-purple-50 rounded-xl border border-purple-200">
+              <div className="mt-6 md:mt-8 p-4 md:p-6 bg-gray-700 rounded-xl border border-gray-600">
                 <div className="flex items-center justify-between">
                   <div>
-                    <h4 className="font-bold text-gray-900">Seja o próximo a sorrir!</h4>
-                    <p className="text-sm text-gray-600">Junte-se a milhares de pessoas satisfeitas</p>
+                    <h4 className="font-bold text-gray-100">Seja o próximo a sorrir!</h4>
+                    <p className="text-sm text-gray-400">Junte-se a milhares de pessoas satisfeitas</p>
                   </div>
                   <div className="text-right">
                     <div className="text-xl md:text-2xl font-bold text-purple-600">98.7%</div>
-                    <div className="text-xs text-gray-600">Recomendariam</div>
+                    <div className="text-xs text-gray-500">Recomendariam</div>
                   </div>
                 </div>
               </div>
@@ -153,11 +153,11 @@ const WrittenTestimonials: React.FC<WrittenTestimonialsProps> = ({ onRedirect })
           {testimonials.map((testimonial, index) => (
             <div 
               key={index}
-              className="bg-white rounded-xl p-4 md:p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105"
+              className="bg-gray-800 rounded-xl p-4 md:p-6 shadow-lg border border-gray-700 hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105"
             >
               {/* Quote icon */}
               <div className="flex justify-between items-start mb-3 md:mb-4">
-                <Quote className="h-6 w-6 md:h-8 md:w-8 text-blue-600 opacity-50" />
+                <Quote className="h-6 w-6 md:h-8 md:w-8 text-blue-400 opacity-50" />
                 <div className="flex">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <Star key={i} className="h-3 w-3 md:h-4 md:w-4 text-yellow-400 fill-current" />
@@ -166,7 +166,7 @@ const WrittenTestimonials: React.FC<WrittenTestimonialsProps> = ({ onRedirect })
               </div>
 
               {/* Testimonial text */}
-              <p className="text-sm md:text-base text-gray-600 mb-4 md:mb-6 italic leading-relaxed">
+              <p className="text-sm md:text-base text-gray-400 mb-4 md:mb-6 italic leading-relaxed">
                 "{testimonial.text}"
               </p>
 
@@ -176,10 +176,10 @@ const WrittenTestimonials: React.FC<WrittenTestimonialsProps> = ({ onRedirect })
                   {testimonial.avatar}
                 </div>
                 <div>
-                  <h4 className="font-semibold text-sm md:text-base text-gray-900">
+                  <h4 className="font-semibold text-sm md:text-base text-gray-100">
                     {testimonial.name}
                   </h4>
-                  <p className="text-xs md:text-sm text-gray-600">
+                  <p className="text-xs md:text-sm text-gray-400">
                     {testimonial.city}
                   </p>
                 </div>

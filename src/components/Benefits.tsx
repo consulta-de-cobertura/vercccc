@@ -40,14 +40,14 @@ const Benefits: React.FC<BenefitsProps> = ({ onRedirect }) => {
   ];
 
   return (
-    <section id="beneficios" className="py-8 md:py-16 bg-gray-50">
+    <section id="beneficios" className="py-8 md:py-16 bg-gray-900">
       <div className="container mx-auto px-4">
         {/* NOVA SEÇÃO ESTRATÉGICA COM A IMAGEM DO CASAL */}
         <div className="mb-12 md:mb-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center max-w-6xl mx-auto">
             <div className="order-2 lg:order-1">
-              <p className="text-lg md:text-xl text-gray-700 mb-6 md:mb-8 leading-relaxed">
-                Imagine nunca mais precisar pedir senha do Wi-Fi, nunca mais ficar sem internet quando sair de casa. <strong className="text-blue-700">Essa é a liberdade</strong> que a Federal Associados oferece.
+              <p className="text-lg md:text-xl text-gray-300 mb-6 md:mb-8 leading-relaxed">
+                Imagine nunca mais precisar pedir senha do Wi-Fi, nunca mais ficar sem internet quando sair de casa. <strong className="text-blue-600">Essa é a liberdade</strong> que a Federal Associados oferece.
               </p>
 
               <div className="space-y-4">
@@ -95,14 +95,14 @@ const Benefits: React.FC<BenefitsProps> = ({ onRedirect }) => {
                 ].map((item, index) => (
                   <div
                     key={index}
-                    className="flex items-start space-x-4 p-4 rounded-lg hover:bg-white transition-colors shadow-sm border border-gray-200"
+                    className="flex items-start space-x-4 p-4 rounded-lg hover:bg-gray-800 transition-colors"
                   >
-                    <div className="bg-green-100 p-2 rounded-full">
+                    <div className="bg-gray-700 p-2 rounded-full">
                       <span className="text-green-400 text-sm">✅</span>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-gray-900 mb-1">{item.title}</h4>
-                      <p className="text-gray-600 text-sm">{item.description}</p>
+                      <h4 className="font-semibold text-gray-100 mb-1">{item.title}</h4>
+                      <p className="text-gray-400 text-sm">{item.description}</p>
                     </div>
                   </div>
                 ))}
@@ -147,7 +147,7 @@ const Benefits: React.FC<BenefitsProps> = ({ onRedirect }) => {
         </div>
 
         <div className="text-center mb-6 md:mb-10">
-          <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-base md:text-lg text-gray-400 max-w-3xl mx-auto">
             Ao se associar na Federal Associados, você recebe um chip com benefícios exclusivos que vão muito além da internet.
           </p>
         </div>
