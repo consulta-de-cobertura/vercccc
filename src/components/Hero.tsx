@@ -197,20 +197,20 @@ const Hero: React.FC<HeroProps> = ({ onRedirect }) => {
   return (
     <section
       ref={sectionRef}
-      className="relative bg-black text-gray-100 pt-4"
+      className="relative bg-white text-gray-900 pt-4"
     >
       <div className="container mx-auto px-4 pt-2 pb-2 md:pt-4 md:pb-8">
         {/* Título principal */}
         <div className="text-center mb-2 md:mb-4">
-          <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black leading-tight animate-pulse-attention text-gray-100">
-            Sua internet <span className="text-blue-400">não dura o mês todo</span>? Você está <span className="text-blue-400">cansado de depender do Wi-Fi dos outros</span> ao sair<br/>
+          <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black leading-tight animate-pulse-attention text-gray-900">
+            Sua internet <span className="text-blue-600">não dura o mês todo</span>? Você está <span className="text-blue-600">cansado de depender do Wi-Fi dos outros</span> ao sair<br/>
             de casa?
           </h1>
         </div>
 
         {/* Pergunta entre título e vídeo */}
         <div className="text-center mb-4 md:mb-6">
-          <p className="text-base md:text-lg text-gray-300 leading-relaxed">
+          <p className="text-base md:text-lg text-gray-700 leading-relaxed">
             Um celular sem internet perde 90% da sua utilidade.
           </p>
         </div>
@@ -218,7 +218,7 @@ const Hero: React.FC<HeroProps> = ({ onRedirect }) => {
         {showVideo && !videoError && (
           <div className="text-center mb-2 md:mb-4 mt-4 md:mt-6">
             <div className="relative max-w-xs md:max-w-4xl mx-auto">
-              <div className="relative aspect-video bg-gray-900 rounded-2xl overflow-hidden shadow-2xl border-4 border-gray-700">
+              <div className="relative aspect-video bg-gray-100 rounded-2xl overflow-hidden shadow-2xl border-4 border-gray-300">
                 <video
                   ref={videoRef}
                   className="w-full h-full object-cover cursor-pointer"
@@ -255,15 +255,15 @@ const Hero: React.FC<HeroProps> = ({ onRedirect }) => {
                     className="absolute inset-0 bg-black/30 flex items-center justify-center cursor-pointer"
                     onClick={handleVideoClick}
                   >
-                    <div className="bg-black/90 backdrop-blur-sm rounded-full p-3 shadow-2xl transform hover:scale-110 transition-transform border border-gray-600">
+                    <div className="bg-white/95 backdrop-blur-sm rounded-full p-3 shadow-2xl transform hover:scale-110 transition-transform border border-gray-300">
                       <div className="text-center">
-                        <VolumeX className="h-4 w-4 text-white mx-auto mb-1" />
-                        <p className="text-white font-bold text-xs">Seu vídeo já começou</p>
+                        <VolumeX className="h-4 w-4 text-gray-900 mx-auto mb-1" />
+                        <p className="text-gray-900 font-bold text-xs">Seu vídeo já começou</p>
                         <p className="text-green-400 font-bold text-xs flex items-center justify-center">
                           <span className="w-2 h-2 bg-green-400 rounded-full mr-1 animate-pulse"></span>
                           {viewerCount} pessoas estão assistindo agora
                         </p>
-                        <p className="text-white/80 text-xs">Aperte para ouvir</p>
+                        <p className="text-gray-700 text-xs">Aperte para ouvir</p>
                       </div>
                     </div>
                   </div>
@@ -278,7 +278,7 @@ const Hero: React.FC<HeroProps> = ({ onRedirect }) => {
           {/* CARD DE BENEFÍCIOS - MOBILE ONLY */}
           <div className="mt-1 md:hidden">
             <div className="p-3">
-              <h3 className="text-lg font-bold mb-4 text-gray-100">Agora imagine ter <span className="text-blue-400">internet 4G/5G verdadeiramente ilimitada</span> para navegar o mês inteiro sem preocupações. Descubra agora como <span className="text-blue-400">mais de 100.000 brasileiros</span> já estão usando <span className="text-blue-400">internet ilimitada de verdade</span> e ainda transformando sua conexão em uma <span className="text-blue-400">fonte de renda extra recorrente com o nosso programa PBI</span></h3>
+              <h3 className="text-lg font-bold mb-4 text-gray-900">Agora imagine ter <span className="text-blue-600">internet 4G/5G verdadeiramente ilimitada</span> para navegar o mês inteiro sem preocupações. Descubra agora como <span className="text-blue-600">mais de 100.000 brasileiros</span> já estão usando <span className="text-blue-600">internet ilimitada de verdade</span> e ainda transformando sua conexão em uma <span className="text-blue-600">fonte de renda extra recorrente com o nosso programa PBI</span></h3>
               
               {/* Imagem e legenda após benefícios - MOBILE */}
               <div className="mb-4">
@@ -290,7 +290,7 @@ const Hero: React.FC<HeroProps> = ({ onRedirect }) => {
                     loading="lazy"
                   />
                 </div>
-                <p className="text-base text-gray-300 leading-relaxed text-center">
+                <p className="text-base text-gray-700 leading-relaxed text-center">
                   Navegue o mês inteiro sem preocupações! Ao se associar, você recebe um chip com benefícios exclusivos que só os nossos associados têm.
                 </p>
               </div>
@@ -313,7 +313,7 @@ const Hero: React.FC<HeroProps> = ({ onRedirect }) => {
           <div className="relative hidden md:block">
             {/* CARD DE BENEFÍCIOS - DESKTOP */}
             <div className="p-6 transform rotate-3 hover:rotate-0 transition-transform duration-500">
-              <h3 className="text-xl font-bold mb-4 text-gray-100">Agora imagine ter <span className="text-blue-400">internet 4G/5G verdadeiramente ilimitada</span> para navegar o mês inteiro sem preocupações. Descubra agora como <span className="text-blue-400">mais de 100.000 brasileiros</span> já estão usando <span className="text-blue-400">internet ilimitada de verdade</span> e ainda transformando sua conexão em uma <span className="text-blue-400">fonte de renda extra recorrente com o nosso programa PBI</span></h3>
+              <h3 className="text-xl font-bold mb-4 text-gray-900">Agora imagine ter <span className="text-blue-600">internet 4G/5G verdadeiramente ilimitada</span> para navegar o mês inteiro sem preocupações. Descubra agora como <span className="text-blue-600">mais de 100.000 brasileiros</span> já estão usando <span className="text-blue-600">internet ilimitada de verdade</span> e ainda transformando sua conexão em uma <span className="text-blue-600">fonte de renda extra recorrente com o nosso programa PBI</span></h3>
               
               {/* Imagem e legenda após benefícios - DESKTOP */}
               <div className="mt-6 mb-6 text-center">
@@ -325,7 +325,7 @@ const Hero: React.FC<HeroProps> = ({ onRedirect }) => {
                     loading="lazy"
                   />
                 </div>
-                <p className="text-base md:text-lg text-gray-300 leading-relaxed">
+                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
                   Navegue o mês inteiro sem preocupações! Ao se associar, você recebe um chip com benefícios exclusivos que só os nossos associados têm.
                 </p>
               </div>
