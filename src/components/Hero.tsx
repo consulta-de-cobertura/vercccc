@@ -203,7 +203,7 @@ const Hero: React.FC<HeroProps> = ({ onRedirect }) => {
         {/* Título principal */}
         <div className="text-center mb-2 md:mb-4">
           <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black leading-tight animate-pulse-attention text-gray-100">
-            Sua internet <span className="text-blue-400">não dura o mês todo</span>? Você está <span className="text-blue-400">cansado de depender do Wi-Fi dos outros</span> ao sair<br/>
+            Sua internet não dura o mês todo? Você está cansado de depender do Wi-Fi dos outros ao sair<br/>
             de casa?
           </h1>
         </div>
@@ -278,7 +278,7 @@ const Hero: React.FC<HeroProps> = ({ onRedirect }) => {
           {/* CARD DE BENEFÍCIOS - MOBILE ONLY */}
           <div className="mt-1 md:hidden">
             <div className="p-3">
-              <h3 className="text-lg font-bold mb-4 text-gray-100">Agora imagine ter <span className="text-blue-400">internet 4G/5G verdadeiramente ilimitada</span> para navegar o mês inteiro sem preocupações. Descubra agora como <span className="text-blue-400">mais de 100.000 brasileiros</span> já estão usando <span className="text-blue-400">internet ilimitada de verdade</span> e ainda transformando sua conexão em uma <span className="text-blue-400">fonte de renda extra recorrente com o nosso programa PBI</span></h3>
+              <h3 className="text-lg font-bold mb-4 text-gray-100">Agora imagine ter internet 4G/5G verdadeiramente ilimitada para navegar o mês inteiro sem preocupações.</h3>
               
               {/* Imagem e legenda após benefícios - MOBILE */}
               <div className="mb-4">
@@ -291,7 +291,7 @@ const Hero: React.FC<HeroProps> = ({ onRedirect }) => {
                   />
                 </div>
                 <p className="text-base text-gray-300 leading-relaxed text-center">
-                  Navegue o mês inteiro sem preocupações! Ao se associar, você recebe um chip com benefícios exclusivos que só os nossos associados têm.
+                  Ao se associar na Federal Associados, você recebe um chip com benefícios exclusivos que só os nossos associados têm.
                 </p>
               </div>
 
@@ -303,6 +303,10 @@ const Hero: React.FC<HeroProps> = ({ onRedirect }) => {
                   Quero internet ilimitada <ArrowRight className="ml-2 h-6 w-6" />
                 </button>
               </div>
+              
+              <div className="mt-4 text-center">
+                <p className="text-sm text-gray-600">Descubra agora como mais de 100.000 brasileiros já estão usando internet ilimitada de verdade e ainda transformando sua conexão em uma fonte de renda extra recorrente com o nosso programa PBI</p>
+              </div>
             </div>
           </div>
         </div>
@@ -313,7 +317,7 @@ const Hero: React.FC<HeroProps> = ({ onRedirect }) => {
           <div className="relative hidden md:block">
             {/* CARD DE BENEFÍCIOS - DESKTOP */}
             <div className="p-6 transform rotate-3 hover:rotate-0 transition-transform duration-500">
-              <h3 className="text-xl font-bold mb-4 text-gray-100">Agora imagine ter <span className="text-blue-400">internet 4G/5G verdadeiramente ilimitada</span> para navegar o mês inteiro sem preocupações. Descubra agora como <span className="text-blue-400">mais de 100.000 brasileiros</span> já estão usando <span className="text-blue-400">internet ilimitada de verdade</span> e ainda transformando sua conexão em uma <span className="text-blue-400">fonte de renda extra recorrente com o nosso programa PBI</span></h3>
+              <h3 className="text-xl font-bold mb-4 text-gray-100">Agora imagine ter internet 4G/5G verdadeiramente ilimitada para navegar o mês inteiro sem preocupações.</h3>
               
               {/* Imagem e legenda após benefícios - DESKTOP */}
               <div className="mt-6 mb-6 text-center">
@@ -326,7 +330,7 @@ const Hero: React.FC<HeroProps> = ({ onRedirect }) => {
                   />
                 </div>
                 <p className="text-base md:text-lg text-gray-300 leading-relaxed">
-                  Navegue o mês inteiro sem preocupações! Ao se associar, você recebe um chip com benefícios exclusivos que só os nossos associados têm.
+                  Ao se associar na Federal Associados, você recebe um chip com benefícios exclusivos que só os nossos associados têm.
                 </p>
               </div>
 
@@ -337,6 +341,10 @@ const Hero: React.FC<HeroProps> = ({ onRedirect }) => {
                 >
                   Quero internet ilimitada <ArrowRight className="ml-2 h-6 w-6" />
                 </button>
+              </div>
+              
+              <div className="mt-6 text-center">
+                <p className="text-sm text-gray-600">Descubra agora como mais de 100.000 brasileiros já estão usando internet ilimitada de verdade e ainda transformando sua conexão em uma fonte de renda extra recorrente com o nosso programa PBI</p>
               </div>
             </div>
           </div>
