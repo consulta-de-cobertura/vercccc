@@ -305,7 +305,7 @@ const Hero: React.FC<HeroProps> = ({ onRedirect }) => {
               </div>
               
               <div className="mt-4 text-center">
-                <p className="text-sm text-gray-600">Descubra agora como mais de 100.000 brasileiros já estão usando internet ilimitada de verdade e ainda transformando sua conexão em uma fonte de renda extra recorrente com o nosso programa PBI</p>
+                <p className="text-sm text-gray-700">Descubra agora como mais de 100.000 brasileiros já estão usando internet ilimitada de verdade e ainda transformando sua conexão em uma fonte de renda extra recorrente com o nosso programa PBI</p>
               </div>
             </div>
           </div>
@@ -344,7 +344,7 @@ const Hero: React.FC<HeroProps> = ({ onRedirect }) => {
               </div>
               
               <div className="mt-6 text-center">
-                <p className="text-sm text-gray-600">Descubra agora como mais de 100.000 brasileiros já estão usando internet ilimitada de verdade e ainda transformando sua conexão em uma fonte de renda extra recorrente com o nosso programa PBI</p>
+                <p className="text-sm text-gray-700">Descubra agora como mais de 100.000 brasileiros já estão usando internet ilimitada de verdade e ainda transformando sua conexão em uma fonte de renda extra recorrente com o nosso programa PBI</p>
               </div>
             </div>
           </div>
