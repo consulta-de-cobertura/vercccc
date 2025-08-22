@@ -32,38 +32,40 @@ function App() {
         {/* 1. HERO - Problema + Agitação */}
         <Hero onRedirect={handleDirectRedirect} />
         
-        {/* 2. BENEFITS - Apresenta a solução imediatamente */}
+        {/* 2. TESTIMONIALS - Prova social logo após o Hero */}
+        <Testimonials />
+        
+        {/* 3. BENEFITS - Apresenta a solução imediatamente */}
         <Benefits onRedirect={handleDirectRedirect} />
         
-        {/* 3. ABOUT - Dá contexto sobre a empresa, cria proximidade e humaniza */}
+        {/* 4. ABOUT - Dá contexto sobre a empresa, cria proximidade e humaniza */}
         <About />
         
-        {/* 4. DIFFERENTIALS - Mostra o porquê somos diferentes dos concorrentes */}
+        {/* 5. DIFFERENTIALS - Mostra o porquê somos diferentes dos concorrentes */}
         <Differentials onRedirect={handleDirectRedirect} />
         
-        {/* 5. TRUST - Elimina as últimas objeções e prepara o terreno para o CTA final */}
+        {/* 6. TRUST - Elimina as últimas objeções e prepara o terreno para o CTA final */}
         <TrustSection onRedirect={handleDirectRedirect} />
         
-        {/* 6. TESTIMONIALS + WRITTEN - Prova social concentrada (mais impacto) */}
-        <Testimonials />
+        {/* 7. WRITTEN TESTIMONIALS - Prova social escrita */}
         <WrittenTestimonials onRedirect={handleDirectRedirect} />
         
-        {/* 7. MEMBERSHIP BENEFITS - Valor agregado (sweeteners) */}
+        {/* 8. MEMBERSHIP BENEFITS - Valor agregado (sweeteners) */}
         <MembershipBenefits onRedirect={handleDirectRedirect} />
         
-        {/* 8. OBJECTIONS - Remove barreiras finais */}
+        {/* 9. OBJECTIONS - Remove barreiras finais */}
         <ObjectionsSection onRedirect={handleDirectRedirect} />
         
-        {/* 9. PLANS - Momento da oferta (quando já estão convencidos) */}
+        {/* 10. PLANS - Momento da oferta (quando já estão convencidos) */}
         <Plans onRedirect={handleDirectRedirect} />
         
-        {/* 9.5. PBI SECTION - Programa de Indicação para transformar internet em renda */}
+        {/* 10.5. PBI SECTION - Programa de Indicação para transformar internet em renda */}
         <PBISection onRedirect={handleDirectRedirect} />
         
-        {/* 10. FAQ - Últimas dúvidas antes da conversão */}
+        {/* 11. FAQ - Últimas dúvidas antes da conversão */}
         <FAQ />
         
-        {/* 11. FOOTER - Fechamento */}
+        {/* 12. FOOTER - Fechamento */}
         <Footer />
         
         {/* Exit Intent Popup */}
