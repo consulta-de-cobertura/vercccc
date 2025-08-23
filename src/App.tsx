@@ -32,21 +32,23 @@ function App() {
         {/* 1. HERO - Problema + Agitação */}
         <Hero onRedirect={handleDirectRedirect} />
         
-        {/* 2. BENEFITS - Apresenta a solução imediatamente */}
+        {/* 2. TESTIMONIALS - Prova social logo após o Hero */}
+        <Testimonials />
+        
+        {/* 2.5. WRITTEN TESTIMONIALS - Prova social escrita logo após vídeos */}
+        <WrittenTestimonials onRedirect={handleDirectRedirect} />
+        
+        {/* 3. BENEFITS - Apresenta a solução imediatamente */}
         <Benefits onRedirect={handleDirectRedirect} />
         
-        {/* 3. ABOUT - Dá contexto sobre a empresa, cria proximidade e humaniza */}
+        {/* 4. ABOUT - Dá contexto sobre a empresa, cria proximidade e humaniza */}
         <About />
         
-        {/* 4. DIFFERENTIALS - Mostra o porquê somos diferentes dos concorrentes */}
+        {/* 5. DIFFERENTIALS - Mostra o porquê somos diferentes dos concorrentes */}
         <Differentials onRedirect={handleDirectRedirect} />
         
-        {/* 5. TRUST - Elimina as últimas objeções e prepara o terreno para o CTA final */}
+        {/* 6. TRUST - Elimina as últimas objeções e prepara o terreno para o CTA final */}
         <TrustSection onRedirect={handleDirectRedirect} />
-        
-        {/* 6. TESTIMONIALS + WRITTEN - Prova social concentrada (mais impacto) */}
-        <Testimonials />
-        <WrittenTestimonials onRedirect={handleDirectRedirect} />
         
         {/* 7. MEMBERSHIP BENEFITS - Valor agregado (sweeteners) */}
         <MembershipBenefits onRedirect={handleDirectRedirect} />
