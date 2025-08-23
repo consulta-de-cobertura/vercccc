@@ -305,7 +305,7 @@ const Hero: React.FC<HeroProps> = ({ onRedirect }) => {
               </div>
               
               <div className="mt-4 text-center">
-                <p className="text-sm text-gray-300">Descubra agora como mais de 100.000 brasileiros já estão usando internet ilimitada de verdade</p>
+                <p className="text-sm text-gray-300 mb-2">Descubra agora como mais de 100.000 brasileiros já estão usando internet ilimitada de verdade</p>
               </div>
             </div>
           </div>
@@ -344,7 +344,7 @@ const Hero: React.FC<HeroProps> = ({ onRedirect }) => {
               </div>
               
               <div className="mt-6 text-center">
-                <p className="text-sm text-gray-300">Descubra agora como mais de 100.000 brasileiros já estão usando internet ilimitada de verdade</p>
+                <p className="text-sm text-gray-300 mb-2">Descubra agora como mais de 100.000 brasileiros já estão usando internet ilimitada de verdade</p>
               </div>
             </div>
           </div>
