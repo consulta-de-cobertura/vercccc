@@ -35,6 +35,9 @@ function App() {
         {/* 2. TESTIMONIALS - Prova social logo após o Hero */}
         <Testimonials />
         
+        {/* 2.5. WRITTEN TESTIMONIALS - Prova social escrita logo após vídeos */}
+        <WrittenTestimonials onRedirect={handleDirectRedirect} />
+        
         {/* 3. BENEFITS - Apresenta a solução imediatamente */}
         <Benefits onRedirect={handleDirectRedirect} />
         
@@ -47,25 +50,22 @@ function App() {
         {/* 6. TRUST - Elimina as últimas objeções e prepara o terreno para o CTA final */}
         <TrustSection onRedirect={handleDirectRedirect} />
         
-        {/* 7. WRITTEN TESTIMONIALS - Prova social escrita */}
-        <WrittenTestimonials onRedirect={handleDirectRedirect} />
-        
-        {/* 8. MEMBERSHIP BENEFITS - Valor agregado (sweeteners) */}
+        {/* 7. MEMBERSHIP BENEFITS - Valor agregado (sweeteners) */}
         <MembershipBenefits onRedirect={handleDirectRedirect} />
         
-        {/* 9. OBJECTIONS - Remove barreiras finais */}
+        {/* 8. OBJECTIONS - Remove barreiras finais */}
         <ObjectionsSection onRedirect={handleDirectRedirect} />
         
-        {/* 10. PLANS - Momento da oferta (quando já estão convencidos) */}
+        {/* 9. PLANS - Momento da oferta (quando já estão convencidos) */}
         <Plans onRedirect={handleDirectRedirect} />
         
-        {/* 10.5. PBI SECTION - Programa de Indicação para transformar internet em renda */}
+        {/* 9.5. PBI SECTION - Programa de Indicação para transformar internet em renda */}
         <PBISection onRedirect={handleDirectRedirect} />
         
-        {/* 11. FAQ - Últimas dúvidas antes da conversão */}
+        {/* 10. FAQ - Últimas dúvidas antes da conversão */}
         <FAQ />
         
-        {/* 12. FOOTER - Fechamento */}
+        {/* 11. FOOTER - Fechamento */}
         <Footer />
         
         {/* Exit Intent Popup */}
