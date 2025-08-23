@@ -44,26 +44,26 @@ function App() {
         {/* 5. TRUST - Elimina as últimas objeções e prepara o terreno para o CTA final */}
         <TrustSection onRedirect={handleDirectRedirect} />
         
-        {/* 6. MEMBERSHIP BENEFITS - Valor agregado (sweeteners) */}
-        <MembershipBenefits onRedirect={handleDirectRedirect} />
-        
-        {/* 7. OBJECTIONS - Remove barreiras finais */}
-        <ObjectionsSection onRedirect={handleDirectRedirect} />
-        
-        {/* 8. PLANS - Momento da oferta (quando já estão convencidos) */}
-        <Plans onRedirect={handleDirectRedirect} />
-        
-        {/* 9. TESTIMONIALS + WRITTEN - Prova social após apresentar a oferta */}
+        {/* 6. TESTIMONIALS + WRITTEN - Prova social concentrada (mais impacto) */}
         <Testimonials />
         <WrittenTestimonials onRedirect={handleDirectRedirect} />
         
-        {/* 10. PBI SECTION - Programa de Indicação para transformar internet em renda */}
+        {/* 7. MEMBERSHIP BENEFITS - Valor agregado (sweeteners) */}
+        <MembershipBenefits onRedirect={handleDirectRedirect} />
+        
+        {/* 8. OBJECTIONS - Remove barreiras finais */}
+        <ObjectionsSection onRedirect={handleDirectRedirect} />
+        
+        {/* 9. PLANS - Momento da oferta (quando já estão convencidos) */}
+        <Plans onRedirect={handleDirectRedirect} />
+        
+        {/* 9.5. PBI SECTION - Programa de Indicação para transformar internet em renda */}
         <PBISection onRedirect={handleDirectRedirect} />
         
-        {/* 11. FAQ - Últimas dúvidas antes da conversão */}
+        {/* 10. FAQ - Últimas dúvidas antes da conversão */}
         <FAQ />
         
-        {/* 12. FOOTER - Fechamento */}
+        {/* 11. FOOTER - Fechamento */}
         <Footer />
         
         {/* Exit Intent Popup */}
