@@ -197,12 +197,12 @@ const Hero: React.FC<HeroProps> = ({ onRedirect }) => {
   return (
     <section
       ref={sectionRef}
-      className="relative bg-black text-gray-100 pt-16"
+      className="relative bg-white text-gray-900 pt-16"
     >
       <div className="container mx-auto px-4 pt-2 pb-2 md:pt-4 md:pb-8">
         {/* Título principal */}
         <div className="text-center mb-2 md:mb-4">
-          <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black leading-tight animate-pulse-attention text-gray-100">
+          <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black leading-tight animate-pulse-attention text-gray-900">
             Sua internet não dura o mês todo? Você está cansado de depender do Wi-Fi dos outros ao sair<br/>
             de casa?
           </h1>
@@ -210,7 +210,7 @@ const Hero: React.FC<HeroProps> = ({ onRedirect }) => {
 
         {/* Pergunta entre título e vídeo */}
         <div className="text-center mb-4 md:mb-6">
-          <p className="text-base md:text-lg text-gray-300 leading-relaxed">
+          <p className="text-base md:text-lg text-gray-700 leading-relaxed">
             Um celular sem internet perde 90% da sua utilidade
           </p>
         </div>
@@ -278,7 +278,7 @@ const Hero: React.FC<HeroProps> = ({ onRedirect }) => {
           {/* CARD DE BENEFÍCIOS - MOBILE ONLY */}
           <div className="mt-1 md:hidden">
             <div className="p-3">
-              <h3 className="text-lg font-bold mb-4 text-gray-100">Agora imagine ter internet 4G/5G verdadeiramente ilimitada para navegar o mês inteiro sem preocupações.</h3>
+              <h3 className="text-lg font-bold mb-4 text-gray-900">Agora imagine ter internet 4G/5G verdadeiramente ilimitada para navegar o mês inteiro sem preocupações.</h3>
               
               {/* Imagem e legenda após benefícios - MOBILE */}
               <div className="mb-4">
@@ -290,7 +290,7 @@ const Hero: React.FC<HeroProps> = ({ onRedirect }) => {
                     loading="lazy"
                   />
                 </div>
-                <p className="text-base text-gray-300 leading-relaxed text-center">
+                <p className="text-base text-gray-700 leading-relaxed text-center">
                   Ao se associar na Federal Associados, você recebe um chip com benefícios exclusivos que só os nossos associados têm.
                 </p>
               </div>
@@ -298,14 +298,14 @@ const Hero: React.FC<HeroProps> = ({ onRedirect }) => {
               <div className="mt-4">
                 <button
                   onClick={onRedirect}
-                  className="w-full inline-flex items-center justify-center rounded-lg font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 animate-subtle-pulse hover:scale-105 bg-green-600 hover:bg-green-700 text-white focus:ring-green-600 shadow-lg text-base py-3 px-6 button-glow"
+                  className="w-full inline-flex items-center justify-center rounded-lg font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 animate-subtle-pulse hover:scale-105 bg-blue-600 hover:bg-blue-700 text-white focus:ring-blue-600 shadow-lg text-base py-3 px-6 button-glow"
                 >
                   Quero internet ilimitada <ArrowRight className="ml-2 h-6 w-6" />
                 </button>
               </div>
               
               <div className="mt-4 text-center">
-                <p className="text-sm text-gray-700">Descubra agora como mais de 100.000 brasileiros já estão usando internet ilimitada de verdade e ainda transformando sua conexão em uma fonte de renda extra recorrente com o nosso programa PBI</p>
+                <p className="text-sm text-gray-600">Descubra agora como mais de 100.000 brasileiros já estão usando internet ilimitada de verdade</p>
               </div>
             </div>
           </div>
@@ -317,7 +317,7 @@ const Hero: React.FC<HeroProps> = ({ onRedirect }) => {
           <div className="relative hidden md:block">
             {/* CARD DE BENEFÍCIOS - DESKTOP */}
             <div className="p-6 transform rotate-3 hover:rotate-0 transition-transform duration-500">
-              <h3 className="text-xl font-bold mb-4 text-gray-100">Agora imagine ter internet 4G/5G verdadeiramente ilimitada para navegar o mês inteiro sem preocupações.</h3>
+              <h3 className="text-xl font-bold mb-4 text-gray-900">Agora imagine ter internet 4G/5G verdadeiramente ilimitada para navegar o mês inteiro sem preocupações.</h3>
               
               {/* Imagem e legenda após benefícios - DESKTOP */}
               <div className="mt-6 mb-6 text-center">
@@ -329,7 +329,7 @@ const Hero: React.FC<HeroProps> = ({ onRedirect }) => {
                     loading="lazy"
                   />
                 </div>
-                <p className="text-base md:text-lg text-gray-300 leading-relaxed">
+                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
                   Ao se associar na Federal Associados, você recebe um chip com benefícios exclusivos que só os nossos associados têm.
                 </p>
               </div>
@@ -337,14 +337,14 @@ const Hero: React.FC<HeroProps> = ({ onRedirect }) => {
               <div className="mt-6">
                 <button
                   onClick={onRedirect}
-                  className="w-full inline-flex items-center justify-center rounded-lg font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 animate-subtle-pulse hover:scale-105 bg-green-600 hover:bg-green-700 text-white focus:ring-green-600 shadow-lg text-base py-3 px-6 button-glow"
+                  className="w-full inline-flex items-center justify-center rounded-lg font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 animate-subtle-pulse hover:scale-105 bg-blue-600 hover:bg-blue-700 text-white focus:ring-blue-600 shadow-lg text-base py-3 px-6 button-glow"
                 >
                   Quero internet ilimitada <ArrowRight className="ml-2 h-6 w-6" />
                 </button>
               </div>
               
               <div className="mt-6 text-center">
-                <p className="text-sm text-gray-700">Descubra agora como mais de 100.000 brasileiros já estão usando internet ilimitada de verdade e ainda transformando sua conexão em uma fonte de renda extra recorrente com o nosso programa PBI</p>
+                <p className="text-sm text-gray-600">Descubra agora como mais de 100.000 brasileiros já estão usando internet ilimitada de verdade</p>
               </div>
             </div>
           </div>

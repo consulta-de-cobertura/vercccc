@@ -70,14 +70,14 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="py-8 md:py-20 bg-black">
+    <section className="py-8 md:py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-6 md:mb-8">
           <div className="inline-flex items-center justify-center bg-blue-100 text-blue-600 rounded-full px-4 py-1 text-sm font-medium mb-4">
             <Star className="h-4 w-4 mr-1" /> DEPOIMENTOS
           </div>
-          <h2 className="text-2xl md:text-4xl font-bold mb-2 md:mb-4 text-gray-100">De alguns dos nossos Associados</h2>
-          <p className="text-base md:text-lg text-gray-400 max-w-3xl mx-auto mb-6 md:mb-8">
+          <h2 className="text-2xl md:text-4xl font-bold mb-2 md:mb-4 text-gray-900">De alguns dos nossos Associados</h2>
+          <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto mb-6 md:mb-8">
             Veja o que dizem as pessoas que já fazem parte da nossa família Federal Associados.
           </p>
         </div>
@@ -105,7 +105,7 @@ const Testimonials = () => {
           >
             {videoTestimonials.map((videoUrl, index) => (
               <SwiperSlide key={index}>
-                <div className="relative aspect-square bg-gray-700 rounded-xl overflow-hidden shadow-lg border border-gray-600">
+                <div className="relative aspect-square bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200">
                   <video
                     className="absolute inset-0 w-full h-full object-contain testimonial-video bg-black"
                     preload="metadata"
@@ -142,7 +142,7 @@ const Testimonials = () => {
                   </video>
                   
                   {/* Overlay com informações */}
-                  <div className="absolute top-2 left-2 bg-black/70 text-white text-xs px-2 py-1 rounded">
+                  <div className="absolute top-2 left-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
                     Depoimento {index + 1}
                   </div>
                 </div>
@@ -176,13 +176,13 @@ const Testimonials = () => {
         >
           {testimonials.map((testimonial, index) => (
             <SwiperSlide key={index}>
-              <div className="bg-gray-700 rounded-xl p-3 md:p-4 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-600">
+              <div className="bg-white rounded-xl p-3 md:p-4 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-200">
                 <div className="flex flex-col items-center">
                   <div className="w-full aspect-square overflow-hidden rounded-lg mb-2 md:mb-3">
                     <img
                       src={testimonial.image}
                       alt={`Depoimento ${index + 1}`}
-                      className="w-full h-full object-contain bg-gray-700"
+                      className="w-full h-full object-contain bg-gray-50"
                     />
                   </div>
                   <div className="flex items-center justify-center">
@@ -197,9 +197,9 @@ const Testimonials = () => {
         </Swiper>
 
         <div className="mt-8 md:mt-12 text-center">
-          <div className="inline-block bg-gray-700 rounded-lg p-4 md:p-6 border border-gray-600 shadow-lg">
-            <p className="text-xl md:text-2xl font-bold text-gray-100 mb-2">+ de 100.000 associados satisfeitos</p>
-            <p className="text-sm md:text-base text-gray-400">
+          <div className="inline-block bg-blue-600 rounded-lg p-4 md:p-6 shadow-lg">
+            <p className="text-xl md:text-2xl font-bold text-white mb-2">+ de 100.000 associados satisfeitos</p>
+            <p className="text-sm md:text-base text-blue-100">
               Junte-se a milhares de pessoas que já descobriram a liberdade de uma internet sem limites
             </p>
           </div>

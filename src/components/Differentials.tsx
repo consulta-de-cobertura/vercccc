@@ -8,12 +8,12 @@ interface DifferentialsProps {
 
 const Differentials: React.FC<DifferentialsProps> = ({ onRedirect }) => {
   return (
-    <section className="py-6 md:py-12 bg-black">
+    <section className="py-6 md:py-12 bg-gray-50">
       <div className="container mx-auto px-4">
         <AnimatedSection animation="fade">
           <div className="text-center mb-6 md:mb-10">
-            <h2 className="text-2xl md:text-4xl font-bold mb-2 md:mb-4 text-gray-100">Por que escolher a Federal Associados?</h2>
-            <p className="text-base md:text-lg text-gray-400 max-w-3xl mx-auto">
+            <h2 className="text-2xl md:text-4xl font-bold mb-2 md:mb-4 text-gray-900">Por que escolher a Federal Associados?</h2>
+            <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto">
               Nossos planos oferecem vantagens reais que as operadoras tradicionais não conseguem igualar.
             </p>
           </div>
@@ -102,14 +102,14 @@ const Differentials: React.FC<DifferentialsProps> = ({ onRedirect }) => {
               {/* Conteúdo textual reformulado */}
               <div className="order-1 lg:order-2">
                 <AnimatedSection animation="slideUp" delay={0.3}>
-                  <h3 className="text-2xl md:text-4xl font-bold mb-4 md:mb-6 text-gray-100">
+                  <h3 className="text-2xl md:text-4xl font-bold mb-4 md:mb-6 text-gray-900">
                     Conectando pessoas em 
                     <span className="block text-blue-600">todo o Brasil</span>
                   </h3>
                 </AnimatedSection>
 
                 <AnimatedSection animation="slideUp" delay={0.4}>
-                  <p className="text-lg md:text-xl text-gray-300 mb-4 md:mb-8 leading-relaxed">
+                  <p className="text-lg md:text-xl text-gray-700 mb-4 md:mb-8 leading-relaxed">
                     Mais de <strong className="text-blue-600">100.000 brasileiros</strong> já descobriram a liberdade de estar sempre conectado, sem limites, sem surpresas.
                   </p>
                 </AnimatedSection>
@@ -135,27 +135,27 @@ const Differentials: React.FC<DifferentialsProps> = ({ onRedirect }) => {
                       delay={0.5 + (index * 0.1)}
                       className="flex items-start space-x-4 p-3 md:p-4 rounded-lg hover:bg-gray-800 transition-colors"
                     >
-                      <div className="bg-gray-700 p-2 rounded-full">
+                      <div className="bg-blue-100 p-2 rounded-full">
                         <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
                       </div>
                       <div>
-                        <h4 className="font-semibold text-gray-100 mb-1">{item.title}</h4>
-                        <p className="text-gray-400 text-sm">{item.description}</p>
+                        <h4 className="font-semibold text-gray-900 mb-1">{item.title}</h4>
+                        <p className="text-gray-600 text-sm">{item.description}</p>
                       </div>
                     </AnimatedSection>
                   ))}
                 </div>
 
                 <AnimatedSection animation="slideUp" delay={0.8}>
-                  <div className="mt-6 md:mt-8 p-4 md:p-6 bg-gray-700 rounded-xl border border-gray-600">
+                  <div className="mt-6 md:mt-8 p-4 md:p-6 bg-blue-50 rounded-xl border border-blue-200">
                     <div className="flex items-center justify-between">
                       <div>
-                        <h4 className="font-bold text-gray-100">Junte-se à nossa família!</h4>
-                        <p className="text-sm text-gray-400">Milhares de pessoas conectadas e satisfeitas</p>
+                        <h4 className="font-bold text-gray-900">Junte-se à nossa família!</h4>
+                        <p className="text-sm text-gray-600">Milhares de pessoas conectadas e satisfeitas</p>
                       </div>
                       <div className="text-right">
                         <div className="text-xl md:text-2xl font-bold text-blue-600">98%</div>
-                        <div className="text-xs text-gray-500">Recomendariam</div>
+                        <div className="text-xs text-gray-600">Recomendariam</div>
                       </div>
                     </div>
                   </div>
@@ -195,10 +195,10 @@ const Differentials: React.FC<DifferentialsProps> = ({ onRedirect }) => {
                   key={index}
                   animation="slideUp"
                   delay={index * 0.1}
-                  className="bg-gray-700 rounded-lg p-4 md:p-6 hover:bg-gray-600 transition-colors border border-gray-600"
+                  className="bg-white rounded-lg p-4 md:p-6 hover:bg-blue-50 transition-colors border border-gray-200 shadow-sm"
                 >
-                  <h3 className="text-lg md:text-xl font-semibold mb-2 text-gray-100">{item.title}</h3>
-                  <p className="text-sm md:text-base text-gray-400">{item.description}</p>
+                  <h3 className="text-lg md:text-xl font-semibold mb-2 text-gray-900">{item.title}</h3>
+                  <p className="text-sm md:text-base text-gray-600">{item.description}</p>
                 </AnimatedSection>
               ))}
             </div>
@@ -206,11 +206,11 @@ const Differentials: React.FC<DifferentialsProps> = ({ onRedirect }) => {
           
           <div className="order-1 md:order-2 relative">
             <AnimatedSection animation="fade" delay={0.3}>
-              <div className="bg-gray-800 rounded-lg shadow-xl p-4 md:p-8 relative z-10 border border-gray-700">
+              <div className="bg-blue-600 rounded-lg shadow-xl p-4 md:p-8 relative z-10">
                 <div className="absolute -top-3 -right-3 bg-orange-500 text-white text-sm font-bold px-4 py-1 rounded-full">
                   Exclusivo
                 </div>
-                <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-center text-gray-100">Nossos Associados Recebem:</h3>
+                <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-center text-white">Nossos Associados Recebem:</h3>
                 <ul className="space-y-3 md:space-y-4">
                   {[
                     "MAIS GIGAS PARA USAR À VONTADE",
@@ -225,12 +225,13 @@ const Differentials: React.FC<DifferentialsProps> = ({ onRedirect }) => {
                       delay={0.4 + (index * 0.1)}
                       className="flex items-start"
                     >
-                      <div className="bg-green-500 rounded-full p-1 mr-3 mt-1">
+                      <div className="bg-white rounded-full p-1 mr-3 mt-1">
                         <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <svg className="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                         </svg>
                       </div>
-                      <span className="text-sm md:text-base text-gray-400">{benefit}</span>
+                      <span className="text-sm md:text-base text-white">{benefit}</span>
                     </AnimatedSection>
                   ))}
                 </ul>
@@ -244,7 +245,7 @@ const Differentials: React.FC<DifferentialsProps> = ({ onRedirect }) => {
           <AnimatedSection animation="slideUp" delay={0.2}>
             <button
               onClick={onRedirect}
-              className="inline-flex items-center justify-center rounded-lg font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 animate-subtle-pulse hover:scale-105 bg-green-600 hover:bg-green-700 text-white focus:ring-green-600 shadow-lg text-lg py-3 px-6 mb-3"
+              className="inline-flex items-center justify-center rounded-lg font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 animate-subtle-pulse hover:scale-105 bg-blue-600 hover:bg-blue-700 text-white focus:ring-blue-600 shadow-lg text-lg py-3 px-6 mb-3"
             >
               Quero Fazer Parte Dessa Família
             </button>

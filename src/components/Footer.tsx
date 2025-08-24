@@ -7,71 +7,71 @@ const Footer = () => {
   const [isPrivacyPolicyOpen, setIsPrivacyPolicyOpen] = React.useState(false);
 
   return (
-    <footer className="bg-gray-900 text-gray-100 pt-8 md:pt-16 pb-6 md:pb-8 border-t border-gray-200">
+    <footer className="bg-white text-gray-900 pt-8 md:pt-16 pb-6 md:pb-8 border-t border-gray-200">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-8 md:mb-12">
           <div>
             <div className="flex items-center mb-3 md:mb-4">
               <Wifi className="h-6 w-6 md:h-8 md:w-8 text-blue-400 mr-2" />
-              <span className="text-lg md:text-xl font-bold text-white">Federal Associados</span>
+              <span className="text-lg md:text-xl font-bold text-gray-900">Federal Associados</span>
             </div>
-            <p className="text-sm md:text-base text-gray-300 mb-4 md:mb-6">
+            <p className="text-sm md:text-base text-gray-600 mb-4 md:mb-6">
               Democratizando o acesso à internet de qualidade, com planos acessíveis, liberdade total e benefícios exclusivos.
             </p>
           </div>
           
           <div>
-            <h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-white">Links Rápidos</h3>
+            <h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-gray-900">Links Rápidos</h3>
             <ul className="space-y-2 md:space-y-3">
-              <li><a href="#beneficios" className="text-sm md:text-base text-gray-300 hover:text-white transition-colors">Benefícios</a></li>
-              <li><a href="#planos" className="text-sm md:text-base text-gray-300 hover:text-white transition-colors">Cadastre-se</a></li>
-              <li><a href="#sobre" className="text-sm md:text-base text-gray-300 hover:text-white transition-colors">Sobre Nós</a></li>
-              <li><a href="#faq" className="text-sm md:text-base text-gray-300 hover:text-white transition-colors">FAQ</a></li>
+              <li><a href="#beneficios" className="text-sm md:text-base text-gray-600 hover:text-blue-600 transition-colors">Benefícios</a></li>
+              <li><a href="#planos" className="text-sm md:text-base text-gray-600 hover:text-blue-600 transition-colors">Cadastre-se</a></li>
+              <li><a href="#sobre" className="text-sm md:text-base text-gray-600 hover:text-blue-600 transition-colors">Sobre Nós</a></li>
+              <li><a href="#faq" className="text-sm md:text-base text-gray-600 hover:text-blue-600 transition-colors">FAQ</a></li>
             </ul>
           </div>
           
           <div>
-            <h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-white">Contato</h3>
+            <h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-gray-900">Contato</h3>
             <ul className="space-y-2 md:space-y-3">
               <li className="flex items-start">
                 <Phone className="h-4 w-4 md:h-5 md:w-5 text-blue-400 mr-2 mt-0.5" />
-                <span className="text-sm md:text-base text-gray-300">Central de Atendimento 24h</span>
+                <span className="text-sm md:text-base text-gray-600">Central de Atendimento 24h</span>
               </li>
               <li className="flex items-start">
                 <Mail className="h-4 w-4 md:h-5 md:w-5 text-blue-400 mr-2 mt-0.5" />
-                <span className="text-sm md:text-base text-gray-300">contato@federalassociados.com.br</span>
+                <span className="text-sm md:text-base text-gray-600">contato@federalassociados.com.br</span>
               </li>
               <li className="flex items-start">
                 <MapPin className="h-4 w-4 md:h-5 md:w-5 text-blue-400 mr-2 mt-0.5" />
-                <span className="text-sm md:text-base text-gray-300">Avenida Contorno, 3790, Bairro Santa Clara, Goianésia-GO</span>
+                <span className="text-sm md:text-base text-gray-600">Avenida Contorno, 3790, Bairro Santa Clara, Goianésia-GO</span>
               </li>
             </ul>
           </div>
           
           <div>
-            <h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-white">Horário de Atendimento</h3>
-            <p className="text-sm md:text-base text-gray-300 mb-4">
+            <h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-gray-900">Horário de Atendimento</h3>
+            <p className="text-sm md:text-base text-gray-600 mb-4">
               Nossa central de suporte está disponível 24 horas por dia, 7 dias por semana, incluindo feriados.
             </p>
           </div>
         </div>
         
-        <div className="border-t border-gray-800 pt-6 md:pt-8 mt-6 md:mt-8">
+        <div className="border-t border-gray-200 pt-6 md:pt-8 mt-6 md:mt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 text-xs md:text-sm mb-3 md:mb-0">
+            <p className="text-gray-600 text-xs md:text-sm mb-3 md:mb-0">
               &copy; {new Date().getFullYear()} Federal Associados. Todos os direitos reservados.
             </p>
             <div className="flex space-x-4">
               <button
                 onClick={() => setIsPrivacyPolicyOpen(true)}
-                className="text-gray-400 hover:text-white text-xs md:text-sm transition-colors"
+                className="text-gray-600 hover:text-blue-600 text-xs md:text-sm transition-colors"
               >
                 Política de Privacidade
               </button>
             </div>
           </div>
           <div className="text-center mt-4">
-            <p className="text-gray-400 text-xs md:text-sm">
+            <p className="text-gray-600 text-xs md:text-sm">
               CNPJ 29.383.343/0001-64
             </p>
           </div>

@@ -235,13 +235,13 @@ const Plans: React.FC<PlansProps> = ({ onRedirect }) => {
   const currentPlans = selectedPlanType === 'withCalls' ? currentOperatorData?.withCalls : currentOperatorData?.withoutCalls;
 
   return (
-    <section id="planos" className="py-6 md:py-12 bg-gray-900">
+    <section id="planos" className="py-6 md:py-12 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-6 md:mb-10">
-          <h2 className="text-2xl md:text-4xl font-bold mb-2 md:mb-4 text-white">
+          <h2 className="text-2xl md:text-4xl font-bold mb-2 md:mb-4 text-gray-900">
             Conheça nossos planos relâmpago disponíveis para cada operadora:
           </h2>
-          <p className="text-base md:text-lg text-gray-300 mb-8">
+          <p className="text-base md:text-lg text-gray-600 mb-8">
             Escolha sua operadora e tipo de plano preferido
           </p>
 
@@ -276,7 +276,7 @@ const Plans: React.FC<PlansProps> = ({ onRedirect }) => {
           <div className="flex flex-col items-center mb-8">
             <div className="flex items-center mb-4">
               <span className="text-pink-500 mr-2">✨</span>
-              <h3 className="text-xl font-bold text-white">Agora escolha o tipo de plano</h3>
+              <h3 className="text-xl font-bold text-gray-900">Agora escolha o tipo de plano</h3>
               <span className="text-pink-500 ml-2">✨</span>
             </div>
             
@@ -316,13 +316,13 @@ const Plans: React.FC<PlansProps> = ({ onRedirect }) => {
         {currentPlans && currentPlans.length > 0 ? (
           <div className="mb-8">
             <div className="text-center mb-6">
-              <h3 className="text-xl md:text-2xl font-bold text-white mb-2">
+              <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">
                 {selectedOperator} - {selectedPlanType === 'withCalls' ? 'Planos com Ligações Ilimitadas' : 'Planos Somente Internet'}
               </h3>
               <div className={`inline-flex items-center rounded-full px-4 py-1 text-sm font-medium ${
                 selectedPlanType === 'withCalls' 
-                  ? 'bg-green-900/50 text-green-400'
-                  : 'bg-gray-800 text-gray-300'
+                  ? 'bg-blue-100 text-blue-600'
+                  : 'bg-gray-100 text-gray-600'
               }`}>
                 {selectedPlanType === 'withCalls' ? (
                   <>
@@ -370,14 +370,14 @@ const Plans: React.FC<PlansProps> = ({ onRedirect }) => {
           </div>
         ) : (
           <div className="text-center py-12">
-            <div className="bg-orange-900/50 border border-orange-500 rounded-lg p-6 max-w-md mx-auto">
-              <h3 className="text-lg font-bold text-orange-800 mb-2">
+            <div className="bg-orange-50 border border-orange-300 rounded-lg p-6 max-w-md mx-auto">
+              <h3 className="text-lg font-bold text-orange-700 mb-2">
                 Planos Indisponíveis
               </h3>
-              <p className="text-orange-300">
+              <p className="text-orange-600">
                 A operadora {selectedOperator} não possui planos {selectedPlanType === 'withCalls' ? 'com ligações' : 'sem ligações'} disponíveis no momento.
               </p>
-              <p className="text-sm text-orange-400 mt-2">
+              <p className="text-sm text-orange-500 mt-2">
                 Tente selecionar outro tipo de plano ou operadora.
               </p>
             </div>
@@ -460,7 +460,7 @@ const Plans: React.FC<PlansProps> = ({ onRedirect }) => {
           </div>
         </div>
 
-        <div className="bg-gray-900 p-4 md:p-6 rounded-2xl shadow-lg max-w-xl mx-auto mt-6 md:mt-12 text-white text-center border border-gray-700">
+        <div className="bg-white p-4 md:p-6 rounded-2xl shadow-lg max-w-xl mx-auto mt-6 md:mt-12 text-gray-900 text-center border border-gray-200">
           <div className="bg-gradient-to-r from-purple-600 to-blue-600 border border-purple-300 p-4 md:p-6 rounded-2xl shadow-lg max-w-xl mx-auto mt-6 md:mt-12 text-white text-center">
             <h2 className="text-xl md:text-2xl font-bold mb-2">💸 Está pagando caro demais?</h2>
             <p className="text-sm text-gray-100 mb-4">
@@ -489,7 +489,7 @@ const Plans: React.FC<PlansProps> = ({ onRedirect }) => {
                   <div className="mt-4">
                     <Button
                       onClick={onRedirect}
-                      className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300 button-glow"
+                      className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300 button-glow"
                     >
                       QUERO ME ASSOCIAR AGORA
                     </Button>
@@ -500,7 +500,7 @@ const Plans: React.FC<PlansProps> = ({ onRedirect }) => {
           </div>
 
           <div className="text-center mb-4 md:mb-6 mt-6 md:mt-12">
-            <h3 className="text-xl md:text-2xl font-bold text-white mb-4 md:mb-6">VOCÊ PODE UTILIZAR SEU PLANO EM:</h3>
+            <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 md:mb-6">VOCÊ PODE UTILIZAR SEU PLANO EM:</h3>
             <div className="flex flex-wrap justify-center gap-3 md:gap-4">
               <div className="flex items-center px-4 md:px-6 py-2 md:py-3 rounded-lg bg-blue-600 text-white">
                 <Smartphone className="h-4 w-4 md:h-5 md:w-5 mr-2" />
